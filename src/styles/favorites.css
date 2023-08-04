@@ -1,0 +1,153 @@
+.hidden{
+  display: none;
+}
+
+.favorites__modal {
+  position: fixed;
+  top: 65px;
+  left: 60%;
+  width: 40%;
+  height: 70%;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  /* animation: enter 2s; */
+  padding: 20px;
+  transition: 1s ease-in-out;
+
+  background-color: rgba(234, 234, 234, 0.939);
+  border-radius: 20px;
+  overflow: scroll;
+}
+
+.favorites__modal:hover{
+  transform: scale(1.05);
+}
+
+.favorites__modal::before {
+  left: 0;
+}
+
+.favorites__modal h2 {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 20px;
+
+
+}
+
+.favorites__modal ul {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 1rem;
+
+}
+
+.favorites__modal ul li {
+  background-color: transparent;
+
+
+}
+
+
+
+.favorites__modal ul li::after {
+  display: none;
+}
+
+
+
+.close-btn.fav {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 82%;
+}
+
+
+
+.favorites__container .book-img {
+  width: 80px;
+  float: left;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.favorites__container .book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.book-info button {
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  background: transparent;
+  border: black 3px solid;
+  cursor: pointer;
+}
+
+.book-info button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.book-info h3 {
+  font-size: 14px;
+  padding-bottom: 5px;
+
+}
+
+.book-info a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.book-info h4 {
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 5px;
+  cursor: default;
+}
+
+.book-info h4:hover {}
+
+
+@media screen and (max-width: 768px){
+  .favorites__modal{
+    left: 33%;
+    width: 50%;
+  }
+  
+}
+@media screen and (max-width: 485px){
+  .hidden{
+    display: block;
+  }
+
+  .favorites__modal{
+    left: 0;
+    top: 20%;
+    width: 45%;
+    height: 50%;
+  }
+
+  .favorites__modal h2{
+    font-size: 14px;
+  }
+  .favorites__modal h3{
+    font-size: 10px;
+  }
+  .favorites__modal h4{
+    font-size: 8px;
+  }
+  .favorites__modal button{
+    width: 50px;
+    height: 20px;
+    font-size: 8px;
+  }
+}

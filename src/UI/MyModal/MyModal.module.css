@@ -1,0 +1,83 @@
+.modalContainer {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: fixed;
+}
+
+.myModal {
+    max-height: 700px;
+    max-width: 500px;
+    position: absolute;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.close {
+    width: 30px;
+    position: absolute;
+    left: 430px;
+    cursor: pointer;
+}
+
+.heroImg {
+    width: 250px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+
+}
+
+.myModal h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 0;
+}
+
+.myModal h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 505px) {
+    .myModal {
+        max-height: 400px;
+        max-width:300px;
+        padding: 20px;
+    }
+
+    .heroImg {
+        width: 150px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+
+    .close {
+        width: 15px;
+        left: 200px;
+       
+    }
+
+
+.myModal h1 {
+    font-size: 15px;
+   
+}
+
+.myModal h2 {
+    font-size: 12px;
+}
+.myModal p{
+    font-size: 8px;
+}
+}

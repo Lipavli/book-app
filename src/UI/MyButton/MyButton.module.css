@@ -1,0 +1,26 @@
+.myBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  background: #000000;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 485px;
+  left: 330px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 610px) {
+  .myBtn {
+    top: 365px;
+  }
+}
+@media screen and (max-width: 485px) {
+  .myBtn {
+    width: 70px;
+    font-size: 10px;
+    left: 220px;
+    top: 445px;
+  }
+}
