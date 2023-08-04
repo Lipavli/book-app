@@ -1,8 +1,10 @@
+
 .explore__box {
     display: flex;
     gap: 2rem;
     flex-direction: row;
-    overflow: scroll;
+    overflow-y: scroll;
+    
     
 }
 
@@ -18,10 +20,10 @@
 
 }
 
-
+/* 
 .explore__item img:hover {
     margin-top: -10px;
-}
+} */
 
 .explore__item h2 {
     font-size: 12px;
