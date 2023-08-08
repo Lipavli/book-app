@@ -10,7 +10,6 @@
   height: 70%;
   z-index: 2;
   color: rgb(0, 0, 0);
-  /* animation: enter 2s; */
   padding: 20px;
   transition: 1s ease-in-out;
 
@@ -58,11 +57,13 @@
 
 
 
-.close-btn.fav {
+.closeBtnFav {
   display: block;
   position: absolute;
   top: 25px;
   left: 82%;
+  width: 20px;
+  cursor: pointer;
 }
 
 
@@ -74,7 +75,7 @@
   cursor: default;
 }
 
-.favorites__container .book-info {
+.favorites__container .bookInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +83,7 @@
 
 }
 
-.book-info button {
+.bookInfo button {
   width: 100px;
   height: 30px;
   border-radius: 30px;
@@ -91,30 +92,28 @@
   cursor: pointer;
 }
 
-.book-info button:hover {
+.bookInfo button:hover {
   background-color: rgb(255, 255, 255);
 }
 
-.book-info h3 {
+.bookInfo h3 {
   font-size: 14px;
   padding-bottom: 5px;
 
 }
 
-.book-info a {
+.bookInfo a {
   text-decoration: none;
   color: black;
 
 }
 
-.book-info h4 {
+.bookInfo h4 {
   font-size: 14px;
   font-weight: 300;
   padding-bottom: 5px;
   cursor: default;
 }
-
-.book-info h4:hover {}
 
 
 @media screen and (max-width: 768px){
