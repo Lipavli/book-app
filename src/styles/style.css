@@ -106,6 +106,10 @@ header li:hover::after {
   background-color: transparent;
 }
 
+.hidden{
+  display: none;
+}
+
 
 /* hero styling */
 
@@ -338,6 +342,10 @@ input {
 
   p {
     max-width: 210px;
+  }
+
+  .hidden{
+    display: block;
   }
 
   input {
