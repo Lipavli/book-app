@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import cl from '../styles/Explore.module.css'
 
 const Explore = () => {
@@ -14,10 +14,21 @@ const Explore = () => {
     { id: 9, title: 'Animal farm', author: 'George Orwell', img: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1325861570i/170448.jpg', link: 'https://www.goodreads.com/book/show/170448.Animal_Farm?from_search=true&from_srp=true&qid=JmZesBNhge&rank=1' },
 
   ])
+
+
+  const containerRef = useRef(null);
+
+  const scrollLeft = () => {
+    containerRef.current.scrollBy({ left: -100, behavior: "smooth" })
+  }
+
+  const scrollRight = () => {
+    containerRef.current.scrollBy({ left: 100, behavior: "smooth" })
+  }
   return (
     <div className={cl.explore}>
       <h1>Explore</h1>
-      <div className={cl.explore__box}>
+      <div className={cl.explore__box} ref={containerRef}>
         {explore.map((book) => (
           <div className={cl.explore__item} key={book.id}>
             <a href={book.link}> <img src={book.img} /> </a>
@@ -26,6 +37,10 @@ const Explore = () => {
           </div>
         )
         )}
+      </div>
+      <div className={cl.controlls}>
+        <img src="/images/left.png" alt="left cursor" className={cl.cursorLeft} onClick={scrollLeft}/>
+        <img src="/images/next.png" alt="right cursor" className={cl.cursorRight} onClick={scrollRight}/>
       </div>
     </div>
   );

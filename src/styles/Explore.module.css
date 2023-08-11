@@ -1,11 +1,10 @@
-
 .explore__box {
     display: flex;
     gap: 2rem;
     flex-direction: row;
     overflow-y: scroll;
-    
-    
+
+
 }
 
 
@@ -28,10 +27,30 @@
 .explore__item h2 {
     font-size: 12px;
     text-align: center;
-     color: rgb(101, 101, 101);
+    color: rgb(101, 101, 101);
 }
 
 .explore__item h3 {
     font-size: 10px;
     text-align: center;
+}
+
+
+.controlls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.controlls img:hover{
+    transform: scale(1.2);
+}
+
+.cursorLeft,
+.cursorRight {
+    width: 30px;
+    cursor: pointer;
+    transition: all .5s ;
+
 }
